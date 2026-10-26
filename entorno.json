@@ -1,0 +1,21 @@
+{
+  "sistema": "Windows-11-10.0.26200-SP0",
+  "cpu": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "java": "java version \"26.0.2.1\" 2026-08-18\nJava(TM) SE Runtime Environment (build 26.0.2.1+1-7)\nJava HotSpot(TM) 64-Bit Server VM (build 26.0.2.1+1-7, mixed mode, sharing)",
+  "ram_total_bytes": 16824262656,
+  "ram_disponible_inicio_bytes": 1309810688,
+  "argumentos": {
+    "java": "C:/Program Files/Java/jdk-26.0.2.1/bin/java.exe",
+    "repeticiones": 3,
+    "limite": 45,
+    "bubble_limite": 8,
+    "max_n": 1000000,
+    "presupuesto_mib": 256
+  },
+  "semilla": 2026,
+  "rango": "[-500.00, 500.00], paso 0.01",
+  "memoria": "PeakWorkingSetSize del proceso completo; MiB=2^20 bytes",
+  "reloj": "perf_counter Python; nanoTime Java; solo ordenamiento",
+  "repeticiones": "procesos nuevos, 200 elementos de calentamiento (Java 5 veces)"
+}

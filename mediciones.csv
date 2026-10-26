@@ -1,0 +1,139 @@
+lenguaje,algoritmo,n,repeticion,estado,segundos,pico_mib,valido,motivo
+Python,bubble,100000,1,TIEMPO_LIMITE,,17.715,,Proceso supero 8 s; no es tiempo de ordenamiento completo
+Python,bubble,1000000,0,NO_EJECUTADO,,,,Tamano mayor omitido tras interrupcion del menor
+Python,bubble,10000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Python,bubble,100000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Python,bubble,1000000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Python,merge,100000,1,OK,0.12514569994527847,19.117,True,
+Python,merge,100000,2,OK,0.12270199996419251,17.824,True,
+Python,merge,100000,3,OK,0.12516150006558746,17.832,True,
+Python,merge,1000000,1,OK,1.7612848000135273,60.184,True,
+Python,merge,1000000,2,OK,1.6870927000418305,59.301,True,
+Python,merge,1000000,3,OK,1.6719719000393525,60.207,True,
+Python,merge,10000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Python,merge,100000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Python,merge,1000000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Python,tree,100000,1,OK,0.12822299997787923,21.449,True,
+Python,tree,100000,2,OK,0.13136979995761067,21.586,True,
+Python,tree,100000,3,OK,0.12139089999254793,21.57,True,
+Python,tree,1000000,1,OK,1.2932690000161529,58.695,True,
+Python,tree,1000000,2,OK,1.3760459999321029,57.613,True,
+Python,tree,1000000,3,OK,1.4150743000209332,57.59,True,
+Python,tree,10000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Python,tree,100000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Python,tree,1000000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Python,heap,100000,1,OK,0.22451299999374896,17.609,True,
+Python,heap,100000,2,OK,0.24298939993605018,17.59,True,
+Python,heap,100000,3,OK,0.22087640000972897,17.07,True,
+Python,heap,1000000,1,OK,6.760166599997319,57.824,True,
+Python,heap,1000000,2,OK,5.741364200017415,55.445,True,
+Python,heap,1000000,3,OK,6.558417199994437,55.562,True,
+Python,heap,10000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Python,heap,100000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Python,heap,1000000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Python,counting,100000,1,OK,0.026730199926532805,18.438,True,
+Python,counting,100000,2,OK,0.027930299984291196,18.414,True,
+Python,counting,100000,3,OK,0.026816500001586974,17.609,True,
+Python,counting,1000000,1,OK,0.21422049996908754,57.262,True,
+Python,counting,1000000,2,OK,0.21950550004839897,57.242,True,
+Python,counting,1000000,3,OK,0.21520169998984784,56.316,True,
+Python,counting,10000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Python,counting,100000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Python,counting,1000000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Java,bubble,100000,1,TIEMPO_LIMITE,,40.949,,Proceso supero 8 s; no es tiempo de ordenamiento completo
+Java,bubble,1000000,0,NO_EJECUTADO,,,,Tamano mayor omitido tras interrupcion del menor
+Java,bubble,10000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Java,bubble,100000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Java,bubble,1000000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Java,merge,100000,1,OK,0.0119184,44.906,True,
+Java,merge,100000,2,OK,0.0107314,44.984,True,
+Java,merge,100000,3,OK,0.0121551,44.977,True,
+Java,merge,1000000,1,OK,0.0904945,59.309,True,
+Java,merge,1000000,2,OK,0.0904484,59.785,True,
+Java,merge,1000000,3,OK,0.0909722,59.309,True,
+Java,merge,10000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Java,merge,100000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Java,merge,1000000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Java,tree,100000,1,OK,0.0182986,46.863,True,
+Java,tree,100000,2,OK,0.0158608,46.48,True,
+Java,tree,100000,3,OK,0.0156293,46.25,True,
+Java,tree,1000000,1,OK,0.1395455,54.777,True,
+Java,tree,1000000,2,OK,0.1949249,54.801,True,
+Java,tree,1000000,3,OK,0.1422931,54.945,True,
+Java,tree,10000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Java,tree,100000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Java,tree,1000000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Java,heap,100000,1,OK,0.0098427,43.312,True,
+Java,heap,100000,2,OK,0.0096072,43.387,True,
+Java,heap,100000,3,OK,0.0095995,43.332,True,
+Java,heap,1000000,1,OK,0.1227331,51.18,True,
+Java,heap,1000000,2,OK,0.1211706,51.148,True,
+Java,heap,1000000,3,OK,0.1187943,51.066,True,
+Java,heap,10000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Java,heap,100000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Java,heap,1000000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Java,counting,100000,1,OK,0.0018096,46.523,True,
+Java,counting,100000,2,OK,0.0018782,46.574,True,
+Java,counting,100000,3,OK,0.0018036,46.629,True,
+Java,counting,1000000,1,OK,0.0101827,53.852,True,
+Java,counting,1000000,2,OK,0.0118962,53.875,True,
+Java,counting,1000000,3,OK,0.0117116,53.805,True,
+Java,counting,10000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Java,counting,100000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Java,counting,1000000000,0,NO_EJECUTADO,,,,Fuera del maximo n configurado para esta sesion
+Python,bubble,10000000,0,NO_EJECUTADO,,,,Costo cuadratico: omitido por presupuesto de tiempo
+Python,bubble,100000000,0,NO_EJECUTADO,,,,Costo cuadratico: omitido por presupuesto de tiempo
+Python,bubble,1000000000,0,NO_EJECUTADO,,,,Costo cuadratico: omitido por presupuesto de tiempo
+Python,merge,10000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,merge,100000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,merge,1000000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,tree,10000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,tree,100000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,tree,1000000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,heap,10000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,heap,100000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,heap,1000000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,counting,10000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,counting,100000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,counting,1000000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Java,bubble,10000000,0,NO_EJECUTADO,,,,Costo cuadratico: omitido por presupuesto de tiempo
+Java,bubble,100000000,0,NO_EJECUTADO,,,,Costo cuadratico: omitido por presupuesto de tiempo
+Java,bubble,1000000000,0,NO_EJECUTADO,,,,Costo cuadratico: omitido por presupuesto de tiempo
+Java,merge,10000000,1,OK,0.9916212,198.93,True,
+Java,merge,10000000,2,OK,0.9613763,198.875,True,
+Java,merge,10000000,3,OK,0.9309415,199.066,True,
+Java,merge,100000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Java,merge,1000000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Java,tree,10000000,1,OK,1.4182384,125.062,True,
+Java,tree,10000000,2,OK,1.4762214,125.469,True,
+Java,tree,10000000,3,OK,1.4459658,125.188,True,
+Java,tree,100000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Java,tree,1000000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Java,heap,10000000,1,OK,2.1060973,121.473,True,
+Java,heap,10000000,2,OK,1.9728827,121.469,True,
+Java,heap,10000000,3,OK,1.9371767,121.562,True,
+Java,heap,100000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Java,heap,1000000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Java,counting,10000000,1,OK,0.1245627,122.551,True,
+Java,counting,10000000,2,OK,0.1154654,122.59,True,
+Java,counting,10000000,3,OK,0.1160875,122.578,True,
+Java,counting,100000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Java,counting,1000000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,bubble,1000,1,OK,0.02851209999062121,13.121,True,
+Python,bubble,1000,2,OK,0.02552220004145056,13.223,True,
+Python,bubble,1000,3,OK,0.02461530000437051,13.125,True,
+Python,bubble,5000,1,OK,0.6936767000006512,13.215,True,
+Python,bubble,5000,2,OK,0.6913552000187337,13.395,True,
+Python,bubble,5000,3,OK,0.7039990000193939,13.391,True,
+Python,bubble,10000,1,OK,2.901083100005053,13.609,True,
+Python,bubble,10000,2,OK,2.9267522000009194,13.625,True,
+Python,bubble,10000,3,OK,2.9754828000441194,13.637,True,
+Java,bubble,1000,1,OK,0.0014429,41.723,True,
+Java,bubble,1000,2,OK,0.001109,41.672,True,
+Java,bubble,1000,3,OK,0.0028741,41.852,True,
+Java,bubble,5000,1,OK,0.0118613,42.406,True,
+Java,bubble,5000,2,OK,0.0173654,42.363,True,
+Java,bubble,5000,3,OK,0.0119509,42.383,True,
+Java,bubble,10000,1,OK,0.0653957,42.379,True,
+Java,bubble,10000,2,OK,0.0743795,42.516,True,
+Java,bubble,10000,3,OK,0.0667015,42.332,True,
