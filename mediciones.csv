@@ -137,3 +137,49 @@ Java,bubble,5000,3,OK,0.0119509,42.383,True,
 Java,bubble,10000,1,OK,0.0653957,42.379,True,
 Java,bubble,10000,2,OK,0.0743795,42.516,True,
 Java,bubble,10000,3,OK,0.0667015,42.332,True,
+Java,bubble,100000,1,OK,13.6142466,41.59,True,
+Java,bubble,100000,2,OK,13.9396599,41.664,True,
+Java,bubble,100000,3,OK,15.6393777,41.711,True,
+Java,bubble,1000000,0,NO_EJECUTADO,,,,Costo cuadratico: omitido por presupuesto de tiempo
+Java,bubble,10000000,0,NO_EJECUTADO,,,,Costo cuadratico: omitido por presupuesto de tiempo
+Java,bubble,100000000,0,NO_EJECUTADO,,,,Costo cuadratico: omitido por presupuesto de tiempo
+Java,bubble,1000000000,0,NO_EJECUTADO,,,,Costo cuadratico: omitido por presupuesto de tiempo
+Java,merge,100000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Java,merge,1000000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Java,tree,100000000,1,OK,18.9948266,825.398,True,
+Java,tree,100000000,2,OK,16.9915473,825.133,True,
+Java,tree,100000000,3,OK,16.8911385,825.254,True,
+Java,tree,1000000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Java,heap,100000000,1,OK,34.2385124,821.844,True,
+Java,heap,100000000,2,OK,33.5011378,821.809,True,
+Java,heap,100000000,3,OK,38.3912499,821.785,True,
+Java,heap,1000000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Java,counting,100000000,1,OK,1.4802178,822.988,True,
+Java,counting,100000000,2,OK,1.4019166,823.043,True,
+Java,counting,100000000,3,OK,1.3930012,823.031,True,
+Java,counting,1000000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,merge,10000000,1,OK,32.7745050000085,471.527,True,
+Python,merge,100000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,merge,1000000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,tree,10000000,1,OK,21.154325300012715,467.941,True,
+Python,tree,100000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,tree,1000000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,heap,10000000,1,OK,75.79996220002067,466.148,True,
+Python,heap,100000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,heap,1000000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,counting,10000000,1,OK,3.349567700002808,466.094,True,
+Python,counting,100000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,counting,1000000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,bubble,100000,1,OK,383.5589580000087,16.383,True,
+Python,bubble,1000000,0,NO_EJECUTADO,,,,Costo cuadratico: omitido por presupuesto de tiempo
+Python,bubble,10000000,0,NO_EJECUTADO,,,,Costo cuadratico: omitido por presupuesto de tiempo
+Python,bubble,100000000,0,NO_EJECUTADO,,,,Costo cuadratico: omitido por presupuesto de tiempo
+Python,bubble,1000000000,0,NO_EJECUTADO,,,,Costo cuadratico: omitido por presupuesto de tiempo
+Python,counting,100000000,1,MEMORIA_LIMITE,,1316.137,,Proceso supero presupuesto de memoria
+Python,counting,1000000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Python,counting,100000000,1,OK,33.84838239999954,1484.324,True,Almacenamiento compacto array(d)
+Python,counting,1000000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria
+Java,merge,100000000,1,OK,12.0340582,1590.062,True,
+Java,merge,100000000,2,OK,12.4945502,1590.027,True,
+Java,merge,100000000,3,OK,12.1229792,1589.988,True,
+Java,merge,1000000000,0,NO_EJECUTADO,,,,Preseleccion: excede presupuesto conservador de memoria

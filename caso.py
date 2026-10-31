@@ -1,12 +1,14 @@
 import json
 import sys
 import time
+from array import array
 from ordenamientos import ALGORITMOS, generar
 
 algoritmo, n = sys.argv[1], int(sys.argv[2])
 # Calentamiento de la misma funcion fuera del intervalo medido.
 ALGORITMOS[algoritmo](list(generar(200)))
-a = list(generar(n))
+compacto = len(sys.argv)>3 and sys.argv[3]=='compacto'
+a = array('d',generar(n)) if compacto else list(generar(n))
 cuentas = [0] * 100001
 for v in a:
     cuentas[round(v * 100) + 50000] += 1

@@ -1,0 +1,51 @@
+lenguaje,algoritmo,n,estado,repeticiones_completas,motivo
+Python,bubble,100000,OK,1,
+Python,bubble,1000000,NO_EJECUTADO,0,Costo cuadratico: omitido por presupuesto de tiempo
+Python,bubble,10000000,NO_EJECUTADO,0,Costo cuadratico: omitido por presupuesto de tiempo
+Python,bubble,100000000,NO_EJECUTADO,0,Costo cuadratico: omitido por presupuesto de tiempo
+Python,bubble,1000000000,NO_EJECUTADO,0,Costo cuadratico: omitido por presupuesto de tiempo
+Python,merge,100000,OK,3,
+Python,merge,1000000,OK,3,
+Python,merge,10000000,OK,1,
+Python,merge,100000000,NO_EJECUTADO,0,Preseleccion: excede presupuesto conservador de memoria
+Python,merge,1000000000,NO_EJECUTADO,0,Preseleccion: excede presupuesto conservador de memoria
+Python,tree,100000,OK,3,
+Python,tree,1000000,OK,3,
+Python,tree,10000000,OK,1,
+Python,tree,100000000,NO_EJECUTADO,0,Preseleccion: excede presupuesto conservador de memoria
+Python,tree,1000000000,NO_EJECUTADO,0,Preseleccion: excede presupuesto conservador de memoria
+Python,heap,100000,OK,3,
+Python,heap,1000000,OK,3,
+Python,heap,10000000,OK,1,
+Python,heap,100000000,NO_EJECUTADO,0,Preseleccion: excede presupuesto conservador de memoria
+Python,heap,1000000000,NO_EJECUTADO,0,Preseleccion: excede presupuesto conservador de memoria
+Python,counting,100000,OK,3,
+Python,counting,1000000,OK,3,
+Python,counting,10000000,OK,1,
+Python,counting,100000000,OK,1,
+Python,counting,1000000000,NO_EJECUTADO,0,Preseleccion: excede presupuesto conservador de memoria
+Java,bubble,100000,OK,3,
+Java,bubble,1000000,NO_EJECUTADO,0,Costo cuadratico: omitido por presupuesto de tiempo
+Java,bubble,10000000,NO_EJECUTADO,0,Costo cuadratico: omitido por presupuesto de tiempo
+Java,bubble,100000000,NO_EJECUTADO,0,Costo cuadratico: omitido por presupuesto de tiempo
+Java,bubble,1000000000,NO_EJECUTADO,0,Costo cuadratico: omitido por presupuesto de tiempo
+Java,merge,100000,OK,3,
+Java,merge,1000000,OK,3,
+Java,merge,10000000,OK,3,
+Java,merge,100000000,OK,3,
+Java,merge,1000000000,NO_EJECUTADO,0,Preseleccion: excede presupuesto conservador de memoria
+Java,tree,100000,OK,3,
+Java,tree,1000000,OK,3,
+Java,tree,10000000,OK,3,
+Java,tree,100000000,OK,3,
+Java,tree,1000000000,NO_EJECUTADO,0,Preseleccion: excede presupuesto conservador de memoria
+Java,heap,100000,OK,3,
+Java,heap,1000000,OK,3,
+Java,heap,10000000,OK,3,
+Java,heap,100000000,OK,3,
+Java,heap,1000000000,NO_EJECUTADO,0,Preseleccion: excede presupuesto conservador de memoria
+Java,counting,100000,OK,3,
+Java,counting,1000000,OK,3,
+Java,counting,10000000,OK,3,
+Java,counting,100000000,OK,3,
+Java,counting,1000000000,NO_EJECUTADO,0,Preseleccion: excede presupuesto conservador de memoria

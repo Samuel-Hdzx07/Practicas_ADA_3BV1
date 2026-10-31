@@ -45,6 +45,12 @@ def main():
     parser.add_argument('--algoritmos',nargs='+',default=['bubble','merge','tree','heap','counting'])
     parser.add_argument('--tamanos',type=int,nargs='+',default=[100_000,1_000_000,10_000_000,100_000_000,1_000_000_000])
     parser.add_argument('--presupuesto-mib',type=int,default=256)
+    parser.add_argument('--java-heap-mib',type=int,default=256)
+    parser.add_argument('--reserva-mib',type=int,default=512)
+    parser.add_argument('--bubble-max-n',type=int,default=100_000)
+    parser.add_argument('--solo-pendientes',action='store_true')
+    parser.add_argument('--continuar-tras-fallo',action='store_true')
+    parser.add_argument('--python-compacto',action='store_true')
     args=parser.parse_args()
     (BASE/'resultados').mkdir(exist_ok=True)
     m=disponible()
@@ -57,6 +63,10 @@ def main():
         repeticiones='procesos nuevos, 200 elementos de calentamiento (Java 5 veces)')
     (BASE/'resultados'/(f'entorno_{time.time_ns()}.json' if args.append else 'entorno.json')).write_text(json.dumps(metadata,indent=2),encoding='utf-8')
     columnas=['lenguaje','algoritmo','n','repeticion','estado','segundos','pico_mib','valido','motivo']
+    completos=set()
+    if args.solo_pendientes and (BASE/'resultados'/'mediciones.csv').exists():
+        with (BASE/'resultados'/'mediciones.csv').open(encoding='utf-8') as anterior:
+            completos={(r['lenguaje'],r['algoritmo'],int(r['n'])) for r in csv.DictReader(anterior) if r['estado']=='OK'}
     fallos=set()
     with (BASE/'resultados'/'mediciones.csv').open('a' if args.append else 'w',newline='',encoding='utf-8') as f:
         writer=csv.DictWriter(f,fieldnames=columnas)
@@ -65,19 +75,23 @@ def main():
             for algoritmo in args.algoritmos:
                 for n in args.tamanos:
                     if n<args.min_n:continue
+                    if (lenguaje,algoritmo,n) in completos:continue
                     motivo=''
                     # Estimaciones de preseleccion, no mediciones del algoritmo.
-                    requerido=(48 if lenguaje=='Python' else 20)*n + 32*2**20
-                    presupuesto=min(args.presupuesto_mib*2**20,max(0,disponible().avail-128*2**20))
-                    if algoritmo=='bubble' and n>100_000: motivo='Costo cuadratico: omitido por presupuesto de tiempo'
+                    por_valor=(48 if algoritmo=='merge' else 40) if lenguaje=='Python' else (16 if algoritmo=='merge' else 8)
+                    if lenguaje=='Python' and args.python_compacto and algoritmo!='merge':por_valor=8
+                    requerido=por_valor*n+96*2**20
+                    presupuesto=min(args.presupuesto_mib*2**20,max(0,disponible().avail-args.reserva_mib*2**20))
+                    if algoritmo=='bubble' and n>args.bubble_max_n: motivo='Costo cuadratico: omitido por presupuesto de tiempo'
                     elif n>args.max_n: motivo='Fuera del maximo n configurado para esta sesion'
                     elif requerido>presupuesto: motivo='Preseleccion: excede presupuesto conservador de memoria'
-                    elif (lenguaje,algoritmo) in fallos: motivo='Tamano mayor omitido tras interrupcion del menor'
+                    elif (lenguaje,algoritmo) in fallos and not args.continuar_tras_fallo: motivo='Tamano mayor omitido tras interrupcion del menor'
                     if motivo:
                         writer.writerow(dict(lenguaje=lenguaje,algoritmo=algoritmo,n=n,repeticion=0,estado='NO_EJECUTADO',motivo=motivo));f.flush();continue
                     for rep in range(1,args.repeticiones+1):
                         cmd=([sys.executable,str(PYTHON_DIR/'caso.py'),algoritmo,str(n)] if lenguaje=='Python'
-                            else [args.java,'-Xms16m','-Xmx256m','-cp',str(JAVA_DIR),'Ordenamientos',algoritmo,str(n)])
+                            else [args.java,'-Xms16m',f'-Xmx{args.java_heap_mib}m','-cp',str(JAVA_DIR),'Ordenamientos',algoritmo,str(n)])
+                        if lenguaje=='Python' and args.python_compacto:cmd.append('compacto')
                         limite=args.bubble_limite if algoritmo=='bubble' else args.limite
                         fila=dict(lenguaje=lenguaje,algoritmo=algoritmo,n=n,repeticion=rep)
                         inicio=time.perf_counter();p=subprocess.Popen(cmd,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
@@ -91,6 +105,8 @@ def main():
                                 estado='TIEMPO_LIMITE';motivo=f'Proceso supero {limite:g} s; no es tiempo de ordenamiento completo';p.kill();break
                             if pico>args.presupuesto_mib*2**20:
                                 estado='MEMORIA_LIMITE';motivo='Proceso supero presupuesto de memoria';p.kill();break
+                            if disponible().avail<args.reserva_mib*2**20:
+                                estado='RAM_DISPONIBLE_LIMITE';motivo='RAM libre inferior a reserva del sistema';p.kill();break
                             time.sleep(.02)
                         stdout,stderr=p.communicate()
                         if handle:kernel.CloseHandle(handle)
@@ -98,6 +114,7 @@ def main():
                         if estado=='OK':
                             try:
                                 resultado=json.loads(stdout.strip().splitlines()[-1]);fila.update(resultado)
+                                if lenguaje=='Python' and args.python_compacto:fila['motivo']='Almacenamiento compacto array(d)'
                                 if p.returncode or not resultado['valido']:raise ValueError('validacion fallida')
                             except Exception:
                                 fila.update(estado='ERROR',motivo=(stderr or stdout)[-500:])
