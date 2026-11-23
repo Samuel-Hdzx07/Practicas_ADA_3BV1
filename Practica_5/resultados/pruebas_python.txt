@@ -1,0 +1,10 @@
+test_cambio_formas_conteo_de_combinaciones (__main__.PruebasProgramacionDinamica.test_cambio_formas_conteo_de_combinaciones) ... ok
+test_cambio_minimo_y_cantidades_imposibles (__main__.PruebasProgramacionDinamica.test_cambio_minimo_y_cantidades_imposibles) ... ok
+test_lcs_subcadena_contigua_con_oraculo (__main__.PruebasProgramacionDinamica.test_lcs_subcadena_contigua_con_oraculo) ... ok
+test_lcs_subsecuencia_con_oraculo (__main__.PruebasProgramacionDinamica.test_lcs_subsecuencia_con_oraculo) ... ok
+test_mochila_casos_limite_y_oraculo_exhaustivo (__main__.PruebasProgramacionDinamica.test_mochila_casos_limite_y_oraculo_exhaustivo) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.012s
+
+OK

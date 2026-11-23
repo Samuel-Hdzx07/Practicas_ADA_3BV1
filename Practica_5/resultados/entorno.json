@@ -1,0 +1,22 @@
+{
+  "sistema": "Windows-11-10.0.26200-SP0",
+  "procesador": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "java": "java version \"26.0.2.1\" 2026-08-18",
+  "compilador_java": "javac 26.0.2.1",
+  "repeticiones_medidas": 5,
+  "calentamientos_python": 1,
+  "calentamientos_java": 1,
+  "estadistico": "mediana; Java usa 3 repeticiones medidas por variante",
+  "cargas_comunes": {
+    "mochila": "n=18, capacidad=55",
+    "cambio": "monedas=[1,3,4,7], cantidad=24",
+    "LCSq_y_LCS": "dos cadenas disjuntas de longitud 10"
+  },
+  "cargas_escalables": {
+    "mochila": "n=90, capacidad=700",
+    "cambio_minimo": "cantidad=600, monedas=[7,13,29]",
+    "cambio_formas": "cantidad=250, monedas=[7,13,29]",
+    "LCSq_y_LCS": "dos cadenas de longitud 160"
+  }
+}

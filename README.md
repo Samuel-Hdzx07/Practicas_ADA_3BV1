@@ -9,6 +9,7 @@ Hernandez Barrios Samuel Rodrigo · Profesor ANDRES GARCIA FLORIANO
 | 2 · Complejidad en ordenamiento | [Abrir PDF](Practica_2/Practica2_ADA_Hernandez_Barrios_Samuel_Rodrigo_3BV1.pdf) | [Carpeta de la práctica 2](Practica_2/) |
 | 3 · Divide y vencerás | [Abrir PDF](Practica_3/Practica3_ADA_Hernandez_Barrios_Samuel_Rodrigo_3BV1.pdf) | [Carpeta de la práctica 3](Practica_3/) |
 | 4 · Algoritmos voraces y Huffman | [Análisis y resultados](Practica_4/README.md) | [Carpeta de la práctica 4](Practica_4/) |
+| 5 · Programación dinámica | [Análisis y resultados](Practica_5/README.md) | [Carpeta de la práctica 5](Practica_5/) |
 
 ## Organización
 
@@ -39,6 +40,12 @@ Practica_4/
   pruebas.py     Casos de ida y vuelta y entradas inválidas
   README.md      Análisis teórico y resultados
   conversacion_ia.md Transcripción de apoyo con IA
+Practica_5/
+  python/        Mochila, cambio, LCSq y LCS
+  java/          Las mismas versiones en Java
+  resultados/    Pruebas, entorno y benchmarks
+  medir.py       Medición comparativa Python/Java
+  README.md      Análisis de complejidad y resultados
 ```
 
 ## Estado de las prácticas
@@ -51,6 +58,8 @@ Practica_4/
 - **Práctica 4:** compresor Huffman en C++17, siete comprobaciones y tres
   benchmarks validados con SHA-256; el ZIP se expandió 334 bytes y el archivo
   homogéneo de 10 millones de bytes se redujo a 12.500% de su tamaño.
+- **Práctica 5:** versiones recursiva, memoizada y tabulada de mochila, cambio,
+  LCSq y LCS en Python y Java; pruebas con oráculos y 50 mediciones comparativas.
 
 Cada carpeta tiene su propio README con los comandos, datos, tipos y protocolo.
 El enlace principal del repositorio sigue siendo el mismo. Los reportes ahora

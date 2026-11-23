@@ -1,0 +1,4 @@
+OK mochila 0/1
+OK cambio minimo y conteo de combinaciones
+OK LCSq y LCS
+435 verificaciones Java correctas.
