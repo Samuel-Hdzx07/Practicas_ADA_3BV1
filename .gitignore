@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 *.class
 qa/
+Practica_4/tmp/
+Practica_4/cpp/huffman
+Practica_4/cpp/huffman.exe

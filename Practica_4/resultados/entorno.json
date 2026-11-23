@@ -1,0 +1,14 @@
+{
+  "sistema": "Windows-11-10.0.26200-SP0",
+  "arquitectura": "AMD64",
+  "procesador": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "compilador": "g++ (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r1) 16.2.0",
+  "flags_compilacion": "-std=c++17 -O2 -Wall -Wextra -Wpedantic -static -static-libgcc -static-libstdc++ (MinGW/Windows)",
+  "ejecutable": "Practica_4/cpp/huffman.exe",
+  "archivo_texto": "Practica_4/cpp/huffman.cpp",
+  "archivo_precomprimido": "Practica_2/Practica2_ADA_Codigo_y_Resultados.zip",
+  "tamano_caso_homogeneo": 10000000,
+  "ratio_pct": "bytes_comprimidos / bytes_originales * 100",
+  "reloj": "time.perf_counter; una ejecución por fase y caso"
+}

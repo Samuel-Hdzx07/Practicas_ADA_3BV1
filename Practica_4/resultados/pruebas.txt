@@ -1,0 +1,9 @@
+OK  archivo vacio                     0 ->         14 bytes
+OK  un unico byte                     1 ->         17 bytes
+OK  alfabeto de 256 bytes           256 ->        590 bytes
+OK  mensaje de la practica           36 ->         53 bytes
+OK  binario con repeticiones      28672 ->       7187 bytes
+OK  una sola letra, 10^7 veces   10000000 ->    1250016 bytes
+OK  rechazo de flujo truncado
+
+7 comprobaciones correctas.
